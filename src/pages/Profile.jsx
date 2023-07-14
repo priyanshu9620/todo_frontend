@@ -7,6 +7,7 @@ const Profile = () => {
 
   return loading ? (
     <Loader />
+    <Navigate to="/login" replace={true} />
   ) : (
     <div>
       <h1>{user?.name}</h1>
