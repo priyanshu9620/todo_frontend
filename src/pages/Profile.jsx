@@ -6,10 +6,7 @@ const Profile = () => {
   const { isAuthenticated, loading, user } = useContext(Context);
 
   return loading ? (
-    <div>
-      <Loader />
-      <Navigate to="/login" replace={true} />
-    </div>
+    <Loader />
   ) : (
     <div>
       <h1>{user?.name}</h1>
